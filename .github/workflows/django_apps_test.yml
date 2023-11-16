@@ -1,0 +1,41 @@
+name: Django Test All Apps
+run-name: Testing django-apps by ${{ github.actor }} 
+on:
+  push:
+    branches:
+      - "dev**"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  Test_django_apps:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Set up pip Dependencies
+      run: |
+        sudo apt install python3-pip
+
+    - name: Install pip requirements
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Django Migrations
+      run: |
+        python manage.py makemigrations
+        python manage.py migrate
+
+    - name: Run Django Tests
+      run: |
+        python manage.py test
