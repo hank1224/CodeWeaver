@@ -21,7 +21,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: 3.11
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     - name: Set up pip Dependencies
       run: |
@@ -38,5 +37,7 @@ jobs:
         python manage.py migrate
 
     - name: Run Django Tests
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
         python manage.py test
