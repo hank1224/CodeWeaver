@@ -1,0 +1,10 @@
+.git
+.gitignore
+.gitattributes
+**/.github
+*.md
+docker-compose.yml
+.env.example
+.env
+db.sqlite3
+**/__pycache__

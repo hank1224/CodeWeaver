@@ -1,9 +1,13 @@
 services:
   web:
+    container_name: codeweaver_web
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver
     volumes:
       - .:/code
     ports:
       - "8000:8000"
-    container_name: codeweaver_web
+    environment:
+      - DJANGO_SECRET_KEY=django-insecure-^2^0qd(@mq-p03et2tp)6qyh(qj6-$i!mdka$dpi5x*$**f#36
+      - DJANGO_DEBUG=True
+      - OPENAI_API_KEY=sk-1234567890 # replace with your API key
