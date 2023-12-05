@@ -1,0 +1,15 @@
+<!-- FILEPATH: /c:/Users/hank2/Desktop/CodeWeaver/templates/gpt_handler/test_api.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPT Test API</title>
+</head>
+<body>
+    <h1>GPT Test API</h1>
+    {% if return_str %}
+        <p>{{ return_str }}</p>
+    {% else %}
+        <p>API connection failed. Unable to display GPT response.</p>
+    {% endif %}
+</body>
+</html>

@@ -13,5 +13,5 @@ def test_API(request):
     ]
     )
 
-    return_str = str(completion.choices[0].message.content) + "，有說英文代表成功"
-    return HttpResponse(return_str)
+    return_str = str(completion.choices[0].message.content)
+    return render(request, 'gpt_handler/test_API.html', {'return_str': return_str})
