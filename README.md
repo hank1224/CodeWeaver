@@ -1,4 +1,4 @@
-# 《CodeWeaver》：AI系統紡織機－利用ChatGPT自動化建置系統
+# 《CodeWeaver》：AI系統紡織機
 
 ![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/workflows/A08Poster.png)
 
