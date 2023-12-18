@@ -1,12 +1,12 @@
 # 《CodeWeaver》：AI系統紡織機
 
-![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/workflows/A08Poster.png)
+![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/A08Poster.png)
 
 ## 設計架構圖
 
-![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/workflows/Architecture%20Diagram.jpg)
+![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/Architecture%20Diagram.jpg)
 
-![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/workflows/Functions.jpg)
+![image](https://github.com/hank1224/CodeWeaver/blob/main/.github/Functions.jpg)
 
 ## 需設置環境變數
 
